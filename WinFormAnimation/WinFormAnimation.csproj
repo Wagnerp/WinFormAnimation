@@ -1,46 +1,60 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-    <TargetFrameworks>net40;net45;net451;net452;net452;net46;net461;net462;net47;net471;net472;net48;net481;netcoreapp3.1-windows;net5.0-windows;net6.0-windows;net47.0-windows</TargetFrameworks>
-    <PackageId>Unofficial.WinFormAnimation</PackageId>
-    <Version>2.0.0.0</Version>
-    <Authors>Soroush Falahati</Authors>
-    <Description>A simple library for animating controls/values in .Net using key-frames.</Description>
-    <PackageLicenseUrl>https://github.com/falahati/WinFormAnimation/blob/master/LICENSE</PackageLicenseUrl>
-    <PackageProjectUrl>https://falahati.github.io/WinFormAnimation/</PackageProjectUrl>
-    <PackageIconUrl>https://github.com/falahati/WinFormAnimation/blob/master/WinFormAnimation/Icon.png?raw=true</PackageIconUrl>
-    <RepositoryUrl>https://github.com/falahati/WinFormAnimatio</RepositoryUrl>
-    <IncludeSymbols>true</IncludeSymbols>
-    <IncludeSource>true</IncludeSource>
-    <NeutralLanguage>en-US</NeutralLanguage>
-    <Copyright>Copyright (c) 2019 Soroush Falahati</Copyright>
-    <PlatformTarget>AnyCPU</PlatformTarget>
-    <Title>Key-Frame Based Animation Library (.NET Framework 4+, .NET CoreApp 3.1 & .NET 5 - 7)</Title>
-    <AssemblyOriginatorKeyFile>OpenSourceStrongNameSignKey.pfx</AssemblyOriginatorKeyFile>
-  </PropertyGroup>
-  <ItemGroup>
-    <PackageReference PrivateAssets="all" Include="MSBump" Version="2.3.2">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
-    </PackageReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Icon.png">
-      <Pack>true</Pack>
-      <PackagePath>\</PackagePath>
-    </Content>
-    <Content Include="readme.txt">
-      <Pack>true</Pack>
-      <PackagePath>\</PackagePath>
-    </Content>
-  </ItemGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <OutputPath>..\Debug</OutputPath>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <BumpRevision>True</BumpRevision>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <OutputPath>..\Release</OutputPath>
-    <SignAssembly>true</SignAssembly>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFrameworks>net462;net47;net471;net472;net48;net481;netcoreapp3.1-windows;net5.0-windows;net6.0-windows;net7.0-windows</TargetFrameworks>
+		<PackageId>Unofficial.WinFormAnimation</PackageId>
+		<Version>2.0.0.0</Version>
+		<Authors>Soroush Falahati, Peter Willam Wagner (A.K.A Wagnerp)</Authors>
+		<Description>A simple library for animating controls/values in .Net using key-frames.</Description>
+		<PackageLicenseUrl>https://github.com/falahati/WinFormAnimation/blob/master/LICENSE</PackageLicenseUrl>
+		<PackageProjectUrl>https://falahati.github.io/WinFormAnimation/</PackageProjectUrl>
+		<PackageIconUrl>https://github.com/falahati/WinFormAnimation/blob/master/WinFormAnimation/Icon.png?raw=true</PackageIconUrl>
+		<RepositoryUrl>https://github.com/falahati/WinFormAnimatio</RepositoryUrl>
+		<IncludeSymbols>true</IncludeSymbols>
+		<IncludeSource>true</IncludeSource>
+		<NeutralLanguage>en-US</NeutralLanguage>
+		<Copyright>Copyright (c) 2019 Soroush Falahati. Then modifications by Peter Willam Wagner (aka Wagnerp) 2023</Copyright>
+		<PlatformTarget>AnyCPU</PlatformTarget>
+		<Title>Key-Frame Based Animation Library (.NET Framework 4.6.2+, .NET CoreApp 3.1, .NET 5 - 7)</Title>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<PackageIcon>Icon.png</PackageIcon>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+	</PropertyGroup>
+	<ItemGroup>
+		<PackageReference PrivateAssets="all" Include="MSBump" Version="2.3.2">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+		</PackageReference>
+	</ItemGroup>
+	<ItemGroup>
+		<Content Include="Icon.png">
+			<Pack>true</Pack>
+			<PackagePath>\</PackagePath>
+		</Content>
+		<Content Include="readme.txt">
+			<Pack>true</Pack>
+			<PackagePath>\</PackagePath>
+		</Content>
+	</ItemGroup>
+	<ItemGroup>
+		<None Include="..\README.md">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+	</ItemGroup>
+	<ItemGroup>
+		<None Update="Icon.png">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+	</ItemGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+		<OutputPath>..\Debug</OutputPath>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+		<BumpRevision>True</BumpRevision>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<OutputPath>..\Release</OutputPath>
+		<SignAssembly>true</SignAssembly>
+	</PropertyGroup>
 </Project>
