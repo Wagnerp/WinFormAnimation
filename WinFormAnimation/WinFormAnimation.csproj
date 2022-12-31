@@ -1,9 +1,9 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>net4</TargetFrameworks>
-    <PackageId>WinFormAnimation</PackageId>
-    <Version>1.6.0.4</Version>
+    <TargetFrameworks>net40;net45;net451;net452;net452;net46;net461;net462;net47;net471;net472;net48;net481;netcoreapp3.1-windows;net5.0-windows;net6.0-windows;net47.0-windows</TargetFrameworks>
+    <PackageId>Unofficial.WinFormAnimation</PackageId>
+    <Version>2.0.0.0</Version>
     <Authors>Soroush Falahati</Authors>
     <Description>A simple library for animating controls/values in .Net using key-frames.</Description>
     <PackageLicenseUrl>https://github.com/falahati/WinFormAnimation/blob/master/LICENSE</PackageLicenseUrl>
@@ -15,7 +15,7 @@
     <NeutralLanguage>en-US</NeutralLanguage>
     <Copyright>Copyright (c) 2019 Soroush Falahati</Copyright>
     <PlatformTarget>AnyCPU</PlatformTarget>
-    <Title>Key-Frame Based Animation Library (.Net 4+)</Title>
+    <Title>Key-Frame Based Animation Library (.NET Framework 4+, .NET CoreApp 3.1 & .NET 5 - 7)</Title>
     <AssemblyOriginatorKeyFile>OpenSourceStrongNameSignKey.pfx</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
