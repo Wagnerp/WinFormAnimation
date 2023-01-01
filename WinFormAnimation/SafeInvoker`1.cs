@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace WinFormAnimation
+﻿namespace WinFormAnimation
 {
     /// <summary>
     ///     The safe invoker class is a delegate reference holder that always

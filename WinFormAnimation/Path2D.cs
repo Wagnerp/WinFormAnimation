@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace WinFormAnimation
+﻿namespace WinFormAnimation
 {
     /// <summary>
     ///     The Path2D class is a representation of a line in a 2D plane and the

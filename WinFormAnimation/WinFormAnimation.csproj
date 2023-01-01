@@ -19,6 +19,7 @@
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<PackageIcon>Icon.png</PackageIcon>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<LangVersion>preview</LangVersion>
 	</PropertyGroup>
 	<ItemGroup>
 		<PackageReference PrivateAssets="all" Include="MSBump" Version="2.3.2">
@@ -52,7 +53,7 @@
 		<OutputPath>..\Debug</OutputPath>
 	</PropertyGroup>
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-		<BumpRevision>True</BumpRevision>
+		<BumpRevision>False</BumpRevision>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 		<OutputPath>..\Release</OutputPath>
 		<SignAssembly>true</SignAssembly>

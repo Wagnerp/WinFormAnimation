@@ -1,7 +1,4 @@
-﻿using System;
-using System.Linq.Expressions;
-
-namespace WinFormAnimation
+﻿namespace WinFormAnimation
 {
     /// <summary>
     ///     The base interface for any Animator class, custom or build-in

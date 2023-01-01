@@ -1,9 +1,9 @@
-# <img src="WinFormAnimation/Icon.png" width="42" alt="Icon"> WinForm Animation Library [.Net3.5+]
+# <img src="WinFormAnimation/Icon.png" width="42" alt="Icon"> WinForm Animation Library [.NET Framework 4.6.2+, .NET CoreApp 3.1, .NET 5 - 7]
 [![](https://img.shields.io/github/license/falahati/WinFormAnimation.svg?style=flat-square)](https://github.com/falahati/WinFormAnimation/blob/master/LICENSE)
 [![](https://img.shields.io/github/commit-activity/y/falahati/WinFormAnimation.svg?style=flat-square)](https://github.com/falahati/WinFormAnimation/commits/master)
 [![](https://img.shields.io/github/issues/falahati/WinFormAnimation.svg?style=flat-square)](https://github.com/falahati/WinFormAnimation/issues)
 
-A simple library for animating controls/values in .Net WinForm (.Net 3.5 and later). Key frame (Path) based and fully customizable.
+A simple library for animating controls/values in .Net WinForm (.NET Framework 4.6.2+, .NET CoreApp 3.1, .NET 5 - 7). Key frame (Path) based and fully customizable.
 
 *Please note that even though this library designed for WinForm but its usage is not limited to WinForm and can be used in other environments. Only reference of the library is to 'System.Drawing' name space.*
 

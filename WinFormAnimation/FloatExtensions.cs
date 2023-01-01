@@ -1,6 +1,4 @@
-﻿using System.Drawing;
-
-namespace WinFormAnimation
+﻿namespace WinFormAnimation
 {
     /// <summary>
     ///     Contains public extension methods about Float2D and Fload3D classes

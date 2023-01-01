@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace WinFormAnimation
+﻿namespace WinFormAnimation
 {
     /// <summary>
     ///     The Path class is a representation of a line in a 1D plane and the

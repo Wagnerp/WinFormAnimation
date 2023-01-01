@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Linq.Expressions;
-using System.Reflection;
-
-namespace WinFormAnimation
+﻿namespace WinFormAnimation
 {
     /// <summary>
     ///     The one dimensional animator class, useful for animating raw values
@@ -74,7 +68,7 @@ namespace WinFormAnimation
         ///     Initializes a new instance of the <see cref="Animator" /> class.
         /// </summary>
         public Animator()
-            : this(new Path[] {})
+            : this(new Path[] { })
         {
         }
 
@@ -85,7 +79,7 @@ namespace WinFormAnimation
         ///     Limits the maximum frames per seconds
         /// </param>
         public Animator(FPSLimiterKnownValues fpsLimiter)
-            : this(new Path[] {}, fpsLimiter)
+            : this(new Path[] { }, fpsLimiter)
         {
         }
 
@@ -96,7 +90,7 @@ namespace WinFormAnimation
         ///     The path of the animation
         /// </param>
         public Animator(Path path)
-            : this(new[] {path})
+            : this(new[] { path })
         {
         }
 
@@ -110,7 +104,7 @@ namespace WinFormAnimation
         ///     Limits the maximum frames per seconds
         /// </param>
         public Animator(Path path, FPSLimiterKnownValues fpsLimiter)
-            : this(new[] {path}, fpsLimiter)
+            : this(new[] { path }, fpsLimiter)
         {
         }
 
@@ -275,7 +269,7 @@ namespace WinFormAnimation
 
             var property =
                 ((propertySetter.Body as MemberExpression) ??
-                 (((UnaryExpression) propertySetter.Body).Operand as MemberExpression))?.Member as PropertyInfo;
+                 (((UnaryExpression)propertySetter.Body).Operand as MemberExpression))?.Member as PropertyInfo;
             if (property == null)
             {
                 throw new ArgumentException(nameof(propertySetter));
@@ -354,7 +348,7 @@ namespace WinFormAnimation
         /// </param>
         public virtual void Play(SafeInvoker<float> frameCallback)
         {
-            Play(frameCallback, (SafeInvoker<float>) null);
+            Play(frameCallback, (SafeInvoker<float>)null);
         }
 
 

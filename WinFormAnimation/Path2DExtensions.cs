@@ -1,6 +1,4 @@
-﻿using System.Linq;
-
-namespace WinFormAnimation
+﻿namespace WinFormAnimation
 {
     /// <summary>
     ///     Contains public extensions methods about Path2D class
