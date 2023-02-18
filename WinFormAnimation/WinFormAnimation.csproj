@@ -3,13 +3,13 @@
 	<PropertyGroup>
 		<TargetFrameworks>net462;net47;net471;net472;net48;net481;netcoreapp3.1-windows;net5.0-windows;net6.0-windows;net7.0-windows</TargetFrameworks>
 		<PackageId>Unofficial.WinFormAnimation</PackageId>
-		<Version>2.0.0.0</Version>
+		<Version>2.0.1</Version>
 		<Authors>Soroush Falahati, Peter Willam Wagner (A.K.A Wagnerp)</Authors>
 		<Description>A simple library for animating controls/values in .Net using key-frames.</Description>
 		<PackageLicenseUrl>https://github.com/falahati/WinFormAnimation/blob/master/LICENSE</PackageLicenseUrl>
 		<PackageProjectUrl>https://falahati.github.io/WinFormAnimation/</PackageProjectUrl>
 		<PackageIconUrl>https://github.com/falahati/WinFormAnimation/blob/master/WinFormAnimation/Icon.png?raw=true</PackageIconUrl>
-		<RepositoryUrl>https://github.com/falahati/WinFormAnimatio</RepositoryUrl>
+		<RepositoryUrl>https://github.com/Wagnerp/WinFormAnimation</RepositoryUrl>
 		<IncludeSymbols>true</IncludeSymbols>
 		<IncludeSource>true</IncludeSource>
 		<NeutralLanguage>en-US</NeutralLanguage>
@@ -20,6 +20,11 @@
 		<PackageIcon>Icon.png</PackageIcon>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<LangVersion>preview</LangVersion>
+		<SignAssembly>True</SignAssembly>
+		<AssemblyOriginatorKeyFile>WinFormAnimation.snk</AssemblyOriginatorKeyFile>
+		<AssemblyVersion>2.0.1</AssemblyVersion>
+		<FileVersion>2.0.1</FileVersion>
+		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
 	</PropertyGroup>
 	<ItemGroup>
 		<PackageReference PrivateAssets="all" Include="MSBump" Version="2.3.2">
@@ -38,6 +43,10 @@
 		</Content>
 	</ItemGroup>
 	<ItemGroup>
+		<None Include="..\LICENSE">
+		  <Pack>True</Pack>
+		  <PackagePath>\</PackagePath>
+		</None>
 		<None Include="..\README.md">
 			<Pack>True</Pack>
 			<PackagePath>\</PackagePath>
